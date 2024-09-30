@@ -1,7 +1,7 @@
 # spotify-API
 ## Spotify Playlist Analyzer Web App
 
-/* This is a Flask-based web application that interacts with the Spotify API to fetch playlist data and visualize it based on different metrics like genre distribution, artist popularity, and more. The app also allows users to export playlist data into a CSV file and visualize data using charts. /*
+This is a Flask-based web application that interacts with the Spotify API to fetch playlist data and visualize it based on different metrics like genre distribution, artist popularity, and more. The app also allows users to export playlist data into a CSV file and visualize data using charts.
 
 ### Features
 Fetches playlist data from the Spotify API using playlist ID.
