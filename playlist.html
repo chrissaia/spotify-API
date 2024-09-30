@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist Results</title>
+</head>
+<body>
+    <h1>Spotify Playlist Results</h1>
+
+    <h2>Rap Songs</h2>
+    <ul>
+        {% for song in rap_songs %}
+            <li>{{ song }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Non-Rap Songs</h2>
+    <ul>
+        {% for song in not_rap_songs %}
+            <li>{{ song }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Genre Distribution</h2>
+    <img src="data:image/png;base64,{{ img_data }}" alt="Genre Distribution">
+
+</body>
+</html>
