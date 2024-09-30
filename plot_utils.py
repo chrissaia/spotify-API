@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 from io import BytesIO
 import base64
 
-# function to plot genre distribution using matplotlib
+# function to plot genre distribution
 def plot_genre_distribution(genre_data):
     genres = list(genre_data.keys())
     counts = list(genre_data.values())
@@ -15,7 +15,7 @@ def plot_genre_distribution(genre_data):
     plt.title('genre distribution in playlist')
     plt.tight_layout()
 
-    # save plot to a BytesIO object, encode as base64
+    # save plot to BytesIO and encode as base64
     img = BytesIO()
     plt.savefig(img, format='png')
     img.seek(0)
