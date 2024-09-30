@@ -1,9 +1,13 @@
 import os
 import csv
 from flask import Flask, request, render_template
+from dotenv import load_dotenv
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 from plot_utils import plot_genre_distribution
+
+# load environment variables from .env file
+load_dotenv()
 
 app = Flask(__name__)
 
